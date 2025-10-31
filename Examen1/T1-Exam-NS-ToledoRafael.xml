@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obra xmlns:cat="http://ejemplo.org/catalogo"
+    xmlns:meta="http://ejemplo.org/metadata">
+    <libro>
+        <cat:titulo>Gatos perros</cat:titulo>
+        <autor>Un periquito</autor>
+    </libro>
+    <ficha>
+        <meta:titulo>Racismo</meta:titulo>
+        <anio>2002</anio>
+    </ficha>
+</obra>

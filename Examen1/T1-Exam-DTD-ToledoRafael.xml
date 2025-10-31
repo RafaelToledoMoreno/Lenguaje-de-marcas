@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventario SYSTEM "T1-Exam-DTD-ToledoRafael.dtd">
+<inventario>
+    <item sku="7b" moneda="EUR">
+        <nombre>Avestruz</nombre>
+        <precio>24</precio>
+        <stock></stock>
+    </item>
+    <item sku="2a" moneda="USD">
+        <nombre>Ballena</nombre>
+        <precio>12$</precio>
+        <stock>7</stock>
+    </item>
+</inventario>

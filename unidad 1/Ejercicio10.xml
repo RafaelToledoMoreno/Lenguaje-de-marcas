@@ -1,0 +1,19 @@
+<agenda xmlns:dir="http://agendadedirecciones.com">
+
+    <contacto id="1">
+        <dir:direccion>
+            <dir:calle>calle esa</dir:calle>
+            <dir:localidad>local</dir:localidad>
+            <dir:codpost>12121</dir:codpost>
+        </dir:direccion>
+        <telefono>123456789</telefono>
+    </contacto>
+    <contacto id="2">
+        <dir:direccion>
+            <dir:calle>calle ese</dir:calle>
+            <dir:localidad>locals</dir:localidad>
+            <dir:codpost>12112</dir:codpost>
+        </dir:direccion>
+        <telefono>123456788</telefono>
+    </contacto>
+</agenda>

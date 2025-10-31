@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- tabla de HTML-->
+    <h:table>
+        <h:tr>
+            <h:td>Manzanas</h:td>
+            <h:td>Plátanos</h:td>
+        </h:tr>
+    </h:table>
+
+    <!--mesa de mueble-->
+    <mueble:table>
+        <mueble:name>IKEA Frogen</mueble:name>
+        <mueble:width unidad="cm">80</mueble:width>
+        <mueble:length unidad="cm">120</mueble:length>
+    </mueble:table>
+</root>

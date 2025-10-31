@@ -1,0 +1,25 @@
+<catalogo xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/">
+    <libro>
+        <dc:title>Manolo Lama</dc:title>
+        <dc:creator>Manolito Lama</dc:creator>
+        <dc:date>08/08/1999</dc:date>
+        <dc:format>mp2</dc:format>
+        <dc:language>Llama</dc:language>
+        <dc:publisher>Lama Manolo inc.</dc:publisher>
+        <valoración>Obra maestra</valoración>
+
+    </libro>
+  
+    <libro>
+        <dc:title>Eso</dc:title>
+        <dc:creator>Lo que sea</dc:creator>
+        <dc:date>Ayer</dc:date>
+        <dc:format>Escrito</dc:format>
+        <dc:language>El que hables</dc:language>
+        <dc:publisher>Yo mismo</dc:publisher>
+        <valoración>Basura histórica</valoración>
+    </libro>
+
+    
+
+</catalogo>

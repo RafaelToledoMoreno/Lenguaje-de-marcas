@@ -1,0 +1,29 @@
+<!DOCTYPE banco SYSTEM "Ejercicio11.dtd">
+<banco>
+    <sucursal id="S001">
+        <cuenta iban="S001C1">
+            <cliente dni="12345678D">
+                <nombre>Yoni Yon</nombre>
+                <telefono>111111111</telefono>
+            </cliente>
+            <cliente dni="01928374L">
+                <nombre>Jonas Jon</nombre>
+                <telefono> 987654321</telefono>
+            </cliente>
+        </cuenta>
+        <cuenta iban="S001C2">
+            <cliente dni="00000000A">
+                <nombre>Pepe Po</nombre>
+                <telefono>564738291</telefono>
+            </cliente>
+        </cuenta>
+    </sucursal>
+    <sucursal id="S002">
+        <cuenta iban="S002C1">
+            <cliente dni="13254769P">
+                <nombre>Bebe Bobo</nombre>
+                <telefono>999999999</telefono>
+            </cliente>
+        </cuenta>
+    </sucursal>
+</banco>

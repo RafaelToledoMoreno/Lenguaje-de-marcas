@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoteca SYSTEM "video.dtd">
+
+<videoteca>
+    <pelicula>
+        <titulo>Mar adentro</titulo>
+        <director>Amenabar</director>
+        <año>2004</año>
+    </pelicula>
+    <pelicula>
+        <titulo>Jumanji</titulo>
+        <director>Jake Kasdan</director>
+        <año>1995</año>
+    </pelicula>
+    <pelicula>
+        <titulo>Matrix</titulo>
+        <director>Jake Kasdan</director>
+        <año>1999</año>
+    </pelicula>
+</videoteca>
