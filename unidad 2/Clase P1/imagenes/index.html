@@ -9,8 +9,8 @@
 </head>
 <body>
     <header class="cabecera">
-        <div class="brand">
-            <img src="gamezone-logo.png"
+        <div="brand">
+            <img src="gamezone-logo.png">
         </div>
         <h1 class="titulo">GameZone</h1>
         <nav class="navegacion">
@@ -82,6 +82,53 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <section class="tarjeta">
+            <!-- action indica la pagina que recibira los datos-->
+            <!-- method=get envia la info de la url -->
+            <!-- name sirve para indentificar simplemente al formulario-->
+            <form name="buscar" action="buscar.html" method="get">
+
+                <!-- label conecta visual y funcionalmente en el campo (a traves de for <-> id)-->
+                <label for="search">Buscar juego:</label>
+
+                <!-- id identifica univocamente al elemento y ademas se conecta con el label-->
+                <!--Placeholder ofrece una pista visual al usuario-->
+                <!-- name define el nombre de la variable que se enviara al servidor cuando se pulse el boton-->
+                <input type="search" name="busqueda" id="search"
+                placeholder="Escribe título...">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <!-- Formulario de registro-->
+    
+        </section>
+        <section class="tarjeta">
+            <h2>Registro de usuario</h2>
+            <form action="registro.php" method="post">
+
+                <!-- Campo de texto-->
+                <label for="name">Nombre de usuario</label>
+                <input type="text" name="nombre" id="name" required>
+
+                <!--Campo de email-->
+                <label for="email--">Email</label>
+                <input type="email" name="correo" id="email" placeholder="correo@example.com" required>
+
+                <!--Campo de tipo password-->
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="clave" id="pass" minlength="6" maxlength="12" required>
+            
+                <!-- Campo de tipo texto con patrón-->
+                <label for="id">DNI/NIE</label>
+                <input type="text" name="documento-id" id="id" pattern="([X-Zx-z][0-9]{7}|[0-9]{8})[A-Za-z]" required>
+
+                <!-- Campo de tipo numerico-->
+                <label for="age">Edad</label>
+                ><input type="submit" id="age" min="@">
+
+                <button type="submit">Registrar</button>
+            </form>
         </section>
     </main>
     <footer class="pie">
