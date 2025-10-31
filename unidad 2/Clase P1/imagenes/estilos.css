@@ -1,1 +1,151 @@
 /* Modelo de caja universal */
+*{
+    box-sizing: border-box;
+}
+/* Altura completa del documento html*/
+html, body {
+    height: 100%;
+}
+
+
+/*
+Configuracion general;
+Quitamos los margenes por defecto
+Elegimos una tipografia base
+Definimos color de texto y fondo
+*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background:#f0f0f0;
+}
+
+/* Cabecera centrada y con espacio de relleno (padding)*/
+.cabecera{
+    text-align: center;
+    padding: 1rem;   /*1 rem = 16 px */
+    display: flex;
+    justify-content: space-between;             /* Separa brand y menu*/
+    align-items: center;                        /*Centrar verticalmente*/
+    background: #2c3e50;
+
+}
+
+/* Tamaño del logo */
+.logo{
+    height: 100px;
+    width: auto;
+}
+
+/* menu con flex */
+.menu {
+    list-style: none;           /* Eliminamos las viñetas */
+    display: flex;              /* Colocamos en lineas los enlace */
+    gap: 1rem;                  /* Separa los enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo basico en los enlaces del menu */
+.menu {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ejecto hover para los enlaces (pseudoclase) */
+.menu a:hover {
+    color: #e74c3c;
+
+}
+
+/* Titulo de la cabecera sin margenes extra y color destacado*/
+.titulo {
+    margin: 0;
+    color: #2c3e50;
+}
+
+/* Zona principal (main)
+    padding -> espacio interior o relleno
+*/
+#contenido-principal {
+    padding: 1rem;
+    flex-grow: 1;           /* Este empuja el footer hacia abajo */
+    display: flex;
+    flex-direction: bold;
+    
+}
+/* Clase "tarjeta": usada para agrupar secciones visualmente
+    color blanco
+    border sutil y redondeado en las esquinas
+    sombra ligera
+    ancho maximo controlado
+    */
+.tarjeta {
+    background: #fff;
+    border-radius: 12px;
+    width: min(900px, 95%);
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0,3);
+}
+
+/* Texto secundario*/
+.aviso{
+        color: #7f8c8d
+}
+
+/* Listas en dos columnas flexibles (FLEX) */
+.listas {
+    display: flex;      /* Convierte el elemento como contenedor flexible*/
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* Ajustes visuales de las listas */
+.lista {
+    padding-left: 20px; /* Espacio para las viñetas o numero*/
+}
+
+.lista li {
+    margin: 0, 5rem, 0; /* Añado espacio vertical entre los elementos de la lista*/
+}
+
+/* Estilamos las tablas */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+/* Border y relleno a las celdas*/
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.tabla th {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+.tabla td {
+    text-align: left;
+    white-space: nowrap;        /* Evita saltos de linea en  */
+}
+
+/* Estilo de pie de pagina:
+    -Color gris suave
+    -tamaño de letra menor
+    -fondo ligeramente gris
+*/
+
+.pie{
+    text-align: center;
+    padding: 1rem;
+    color: #7f8c8d;
+    background: #38707e;
+    font-size: 14px; 
+}

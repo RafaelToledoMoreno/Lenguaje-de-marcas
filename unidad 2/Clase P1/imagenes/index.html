@@ -8,14 +8,80 @@
     <title>GameZone - Tu portal de videojuegos</title>
 </head>
 <body>
-    <header>
-        <h1>GameZone</h1>
+    <header class="cabecera">
+        <div class="brand">
+            <img src="gamezone-logo.png"
+        </div>
+        <h1 class="titulo">GameZone</h1>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="tarjeta">
+    <main id="contenido-principal">
+        <section class="intro tarjeta">
             <h2>Bienvenidops a GameZone</h2>
             <p>Portal de ejemplo para practicar HTML y CSS.</p>
             <p class="aviso">Hoy: estructura semantica y box model sobre esta tarjeta</p>
+        </section>
+
+        <!-- Seccion que contendra listas y tablas-->
+
+
+        <section class="listas-y-tabla tarjeta">
+            <h2>Guia rapida</h2>
+            <div class="listas">
+                <div>
+                    <h3>Caracteristicas</h3>
+                    <ul class="lista">
+                        <li>Analisis semanales</li>
+                        <li>Guias paso a paso</li>
+                        <li>Comunidad activa</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Primeros pasos</h3>
+                    <ol class="lista">
+                        <li>Elige tu genero favorito</li>
+                        <li>Explora la galeria</li>
+                        <li>Lee las guias</li>
+                        <li>Comparte tu opinion</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- La tabla -->
+            <h3>Top Ventas</h3>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Juego</th>
+                        <th>Plataforma</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Racing Challenge</td>
+                        <td>PC</td>
+                        <td>120.00€</td>
+                    </tr>
+                    <tr>
+                        <td>Magic Reales</td>
+                        <td>PS</td>
+                        <td>95.90€</td>
+                    </tr>
+                    <tr>
+                        <td>City Builder</td>
+                        <td>Switch</td>
+                        <td>81.20€</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer class="pie">
