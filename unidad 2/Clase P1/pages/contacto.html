@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de videojuegos">
+    <link rel="stylesheet" href="..estilos.css">
+    <title>GameZone - Tu portal de videojuegos</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div="brand">
+            <img src="..imagenes/gamezone-logo.png">
+        </div>
+        <h1 class="titulo">GameZone</h1>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guias</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section class="tarjeta">
+            <h2>Contacto</h2>
+            <form action="contacto.php" method="get">
+
+                <!-- Lista desplegable -->
+                <label for="genero">Genero de juego favorito</label>
+                <select name="categoria" id="genero">
+                    <option disabled selected>-Selecciona una opcion-</option>
+                    <option value="rol">Rol</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="deportes">Deportes</option>
+                </select>
+
+                <!-- Campo de tipo radio -->
+                <p>Elige tu plataforma</p>
+                <input type="radio" name="plataforma" id="pc">
+                <label for="pc">PC</label>
+
+                <input type="radio" name="plataforma" id="ps5">
+                <label for="ps5">PS5</label>
+
+                <input type="radio" name="plataforma" id="nintendo">
+                <label for="nintendo">Nintendo</label>
+
+                <!-- Campo de tipo checkbox -->
+                <p>Plataforma</p>
+                <input type="checkbox" name="dificultad" id="dificultad" value="facil">
+                <label for="dificultad">Fácil</label>
+
+                <input type="checkbox" name="dificultad" id="dificultad" value="medio">
+                <label for="dificultad">Medio</label>
+
+                <input type="checkbox" name="dificultad" id="dificultad" value="dificil">
+                <label for="dificultad">Díficil</label>
+
+                <!-- Checkbox sin value-->
+                <br>
+                <label for="suscripcion">Suscribirse a noticias</label>
+                <input type="checkbox" name="suscripcion" id="suscripcion">
+
+                <!-- Campo oculto-->
+                <input type="hidden" name="producto" value="1234">
+
+                <br>
+                <input type="submit" value="Aceptar">
+                <input type="reset" value="Limpiar">
+
+            </form>
+        </section>
+       
+    </main>
+    <footer class="pie">
+        <p>&copy; 2025 GameZone. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
