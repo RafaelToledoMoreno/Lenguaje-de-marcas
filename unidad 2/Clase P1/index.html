@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,53 +9,51 @@
 </head>
 <body>
     <header class="cabecera">
-        <div="brand">
-            <img src="imagenes/gamezone-logo.png">
+        <div class="brand">
+            <img src="imagenes/gamezone-logo.png" alt="Logo de GameZone" class="logo">
         </div>
-        <h1 class="titulo">GameZone</h1>
+        <!-- <h1 class="titulo">GameZone</h1> -->
         <nav class="navegacion">
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Noticias</a></li>
-                <li><a href="#">Guias</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
                 <li><a href="pages/registro.html">Registro</a></li>
             </ul>
         </nav>
     </header>
     <main id="contenido-principal">
         <section class="intro tarjeta">
-            <h2>Bienvenidops a GameZone</h2>
+            <h2>Bienvenidos a GameZone</h2>
             <p>Portal de ejemplo para practicar HTML y CSS.</p>
-            <p class="aviso">Hoy: estructura semantica y box model sobre esta tarjeta</p>
+            <p class="aviso">Hoy: estructura semántica y box model sobre esta tarjeta.</p>
         </section>
 
-        <!-- Seccion que contendra listas y tablas-->
-
-
+        <!-- Sección que contendrá listas y tablas -->
         <section class="listas-y-tabla tarjeta">
-            <h2>Guia rapida</h2>
+            <h2>Guía rápida</h2>
             <div class="listas">
                 <div>
-                    <h3>Caracteristicas</h3>
+                    <h3>Características</h3>
                     <ul class="lista">
-                        <li>Analisis semanales</li>
-                        <li>Guias paso a paso</li>
+                        <li>Análisis semanales</li>
+                        <li>Guías paso a paso</li>
                         <li>Comunidad activa</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Primeros pasos</h3>
                     <ol class="lista">
-                        <li>Elige tu genero favorito</li>
-                        <li>Explora la galeria</li>
-                        <li>Lee las guias</li>
-                        <li>Comparte tu opinion</li>
+                        <li>Elige tu género favorito</li>
+                        <li>Explora la galería</li>
+                        <li>Lee las guías</li>
+                        <li>Comparte tu opinión</li>
                     </ol>
                 </div>
             </div>
 
-            <!-- La tabla -->
+            
             <h3>Top Ventas</h3>
             <table class="tabla">
                 <thead>
@@ -72,7 +70,7 @@
                         <td>120.00€</td>
                     </tr>
                     <tr>
-                        <td>Magic Reales</td>
+                        <td>Magic Realms</td>
                         <td>PS</td>
                         <td>95.90€</td>
                     </tr>
@@ -85,61 +83,60 @@
             </table>
         </section>
         <section class="tarjeta">
-            <!-- action indica la pagina que recibira los datos-->
-            <!-- method=get envia la info de la url -->
-            <!-- name sirve para indentificar simplemente al formulario-->
-            <form name="buscar" action="buscar.html" method="get">
-
-                <!-- label conecta visual y funcionalmente en el campo (a traves de for <-> id)-->
+            <!-- action indica la página que recibirá los datos -->
+            <!-- method=get envia la info en la URL -->
+            <!-- name sirve para identificar simplemente al formulario -->
+            <form name="buscar" action="buscar.php" method="get">
+                
+                <!-- label conecta visual y funcionalmente con el campo (a través de for <-> id) -->
                 <label for="search">Buscar juego:</label>
 
-                <!-- id identifica univocamente al elemento y ademas se conecta con el label-->
-                <!--Placeholder ofrece una pista visual al usuario-->
-                <!-- name define el nombre de la variable que se enviara al servidor cuando se pulse el boton-->
+                <!-- id identifica unívocamente al elemento y además se conecta con el label -->
+                <!-- placeholder ofrece una pista visual al usuario -->
+                <!-- name define el nombre de la variable que se enviará al servidor cuando se pulse el botón -->
                 <input type="search" name="busqueda" id="search"
                 placeholder="Escribe título...">
                 <button type="submit">Buscar</button>
             </form>
-
-            <!-- Formulario de registro-->
-    
         </section>
         <section class="tarjeta">
             <h2>Registro de usuario</h2>
             <form action="registro.php" method="post">
 
-                <!-- Campo de texto-->
-                <label for="name">Nombre de usuario</label>
+                <!-- Campo de texto -->
+                <label for="name">Nombre de usuario:</label>
                 <input type="text" name="nombre" id="name" required>
 
-                <!--Campo de email-->
-                <label for="email--">Email</label>
+                <!-- Campo de tipo email -->
+                <label for="email">Email:</label>
                 <input type="email" name="correo" id="email" placeholder="correo@example.com" required>
 
-                <!--Campo de tipo password-->
+                <!-- Campo de tipo password -->
                 <label for="pass">Contraseña:</label>
                 <input type="password" name="clave" id="pass" minlength="6" maxlength="12" required>
-            
-                <!-- Campo de tipo texto con patrón-->
-                <label for="id">DNI/NIE</label>
+
+                <!-- Campo de tipo texto con patrón -->
+                <label for="id">DNI/NIE:</label>
                 <input type="text" name="documento-id" id="id" pattern="([X-Zx-z][0-9]{7}|[0-9]{8})[A-Za-z]" required>
 
-                <!-- Campo de tipo numerico-->
-                <label for="age">Edad</label>
-                ><input type="submit" id="age" min="@">
+                <!-- Campo de tipo númerico -->
+                <label for="age">Edad:</label>
+                <input type="number" name="edad" id="age" min="0">
 
                 <button type="submit">Registrar</button>
             </form>
         </section>
 
-        <!-- Otros campos de formulario-->
+        <!-- Otros campos de formulario -->
         <section class="tarjeta">
             <h2>Otros campos de formulario</h2>
-            <form name=""></form>
+            <form name="contacto" action="contacto.php" method="post">
+
+            </form>
         </section>
     </main>
     <footer class="pie">
-        <p>&copy; 2025 GameZone. Todos los derechos reservados</p>
+        <p>&copy; 2025 GameZone. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
