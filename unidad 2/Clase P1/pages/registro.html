@@ -16,11 +16,12 @@
         <nav class="navegacion">
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Guías</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="guias.html">Guías</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#">Registro</a></li>
+                <li><a href="registro.html" class="activo">Registro</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
             </ul>
         </nav>
     </header>
@@ -32,26 +33,25 @@
                 <fieldset>
                     <!-- Legend añade una leyenda al fieldset -->
                     <legend>Datos de usuario</legend>
-
-
+                    
                     <!-- Campo de texto -->
                     <div class="form-row">
                         <label for="name">Nombre de usuario:</label>
                         <input type="text" name="nombre" id="name" required>
                     </div>
                     
+                    
                     <!-- Campo de tipo password -->
                     <div class="form-row">
                         <label for="pass">Contraseña:</label>
-                    <input type="password" name="clave" id="pass" minlength="6" maxlength="12" required>
+                        <input type="password" name="clave" id="pass" minlength="6" maxlength="12" required>
                     </div>
-                
+
                     <!-- Campo de tipo email -->
                     <div class="form-row">
                         <label for="email">Email:</label>
                         <input type="email" name="correo" id="email" placeholder="correo@example.com" required>
                     </div>
-
 
                     <!-- Campo de tipo texto con patrón -->
                     <div class="form-row">
@@ -65,13 +65,11 @@
                         <input type="number" name="edad" id="age" min="0">
                     </div>
 
-                    <!-- Botonera-->
+                    <!-- Botonera -->
                     <div class="form-row botones">
-                        
+                        <button type="submit">Registrar</button>
                     </div>
-                </fieldset>
-
-                <button type="submit">Registrar</button>
+                </fieldset>   
             </form>
         </section>
     </main>
