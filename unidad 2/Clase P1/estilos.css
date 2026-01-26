@@ -295,7 +295,7 @@ body {
 }
 
 /* display: inline-block:
-    Por defecto, los enlaces <a> son elementos en lína y no aceptan padding vertical real ni border radius bien definidos. 
+    Por defecto, los enlaces <a> son elementos en línea y no aceptan padding vertical real ni border radius bien definidos. 
     Con inline-block permito que se comporte como un botón real con padding, bordes redondeados y ancho ajustado al texto. */
 
 
